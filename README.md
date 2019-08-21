@@ -52,9 +52,11 @@ https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-s
   
     - To get the updates (new branches and codes after taking the fork) **$ git fetch upstream**
     - This way forked repo will be synced with the upstream repo
+    [Sync the fork](https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/upstream-fetch.png)
 
 
-- Create Pull request 
+- Create Pull request
+ [Pull request](https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/pull%20request.png)
        
 
 
