@@ -42,8 +42,8 @@ https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-s
    
    - to check which remote servers you have configured **$ git remote -v**
    - Right now it will display the cloned repo as remote repository
-     origin  https://github.com/W3-Anjan/MockitoUnitTestTutorial.git (fetch)
-     origin  https://github.com/W3-Anjan/MockitoUnitTestTutorial.git (push)
+      - origin  https://github.com/W3-Anjan/MockitoUnitTestTutorial.git (fetch)
+      - origin  https://github.com/W3-Anjan/MockitoUnitTestTutorial.git (push)
    - Next, we’ll specify a new **remote upstream repository for us to sync with the fork**. 
      This will be the original repository that we forked from. We’ll do this with the git remote add command.  
      **$ git remote add upstream https://github.com/anjandebnath/MockitoUnitTestTutorial.git**
