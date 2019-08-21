@@ -4,10 +4,10 @@ https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-s
 **Steps for open source contribution**
 
 - Fork the Repository 
-   - here we had forked **https://github.com/anjandebnath/MockitoUnitTestTutorial** and the forked link is **https://github.com/W3-Anjan/MockitoUnitTestTutorial**
+   - here we had forked https://github.com/anjandebnath/MockitoUnitTestTutorial and the forked link is https://github.com/W3-Anjan/MockitoUnitTestTutorial
    
 - Clone the Repository
-   - **git clone https://github.com/W3-Anjan/MockitoUnitTestTutorial.git**
+   - git clone https://github.com/W3-Anjan/MockitoUnitTestTutorial.git
    
 - Create a New Branch
    - **$ git checkout -b contributor-branch**
