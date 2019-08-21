@@ -54,7 +54,7 @@ https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-s
     - This way forked repo will be synced with the upstream repo
 
 
-
+- Create Pull request 
        
 
 
