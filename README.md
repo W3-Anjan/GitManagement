@@ -52,20 +52,25 @@ https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-s
   
     - To get the updates (new branches and codes after taking the fork) **$ git fetch upstream**
     - This way forked repo will be synced with the upstream repo
-    [Sync the fork](https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/upstream-fetch.png)
+    - Sync the fork
+    
+    <kbd><img src="https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/upstream-fetch.png" align="center"></kbd>
 
 
 - Create Pull request
- [Pull request](https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/pull%20request.png)
-       
-
+      
+ <kbd><img src="https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/pull%20request.png" align="center"></kbd>
 
 
 
 - **in terms of Git, “upstream” refers to the repository that we cloned from.**
 
-[Repository First time setup](https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/git-and-github-initial-setup.png)
+### Repository First time setup
 
-[Fork and Clone](https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/upstream-origin-local.png)
+<kbd><img src="https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/git-and-github-initial-setup.png" align="center"></kbd>
+
+### Fork and Clone
+<kbd><img src="https://github.com/W3-Anjan/GitManagement/blob/feature/new-branchV2/img/upstream-origin-local.png" align="center"></kbd>
+
 
 
