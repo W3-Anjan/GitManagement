@@ -12,16 +12,38 @@ https://dev.to/migu3l/commit-standard-and-semantic-versioning-for-any-project-1i
    - npm i -g commitizen
    - npm i -D husky @commitlint/cli @commitlint/config-conventional @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/npm
    ```
-- Create a New Branch
-   - **$ git checkout -b contributor-branch**
+- Create a ``package.json`` file
+   - You can add a package.json file to your package to make it easy for others to manage and install. Packages published to the registry must contain a package.json file.
+   - To create a package.json file with values that you supply, use the npm init command.
+   - On the command line, navigate to the root directory of your package.
+        - ```cd /path/to/package```
+   - Run the following command:
+        - ```npm init```
+- Create a ``package-lock.json`` file 
+   - Execute **commitizen init cz-conventional-changelog -D -E** 
+   - this will add the dependencies of cz-conventional-changelog and update our package with the configuration:
+        ```
+            "config": {
+              "commitizen": {
+                "path": "./node_modules/cz-conventional-changelog"
+              }
+            }
+        ```
    
-- Make Changes Locally
-   - to commit message from text editor set to config **$ git config --global core.editor "nano"**
-      (ctrl+X to exit the editor. Then it will ask for confirmation and write Y and press Enter)
-   - to commit **$ git commit -m "contributor package added"**
-   - to push **$ git push --set-upstream origin contributor-branch** 
-   
-- Update Local Repository
+- Update ``package.json`` to Husky check if the commits follow the conventional standard using commitlint
+
+        ```
+            "husky": {
+              "hooks": {
+                "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+              }
+            },
+            "commitlint": {
+              "extends": [
+                "@commitlint/config-conventional"
+              ]
+            }
+        ```
 
   - Configure a Remote for the Fork
   
