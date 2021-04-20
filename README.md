@@ -1,14 +1,17 @@
 ### Reference 
-https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source
+https://www.mokkapps.de/blog/how-to-automatically-generate-a-helpful-changelog-from-your-git-commit-messages/
 
-**Steps for open source contribution**
+https://dev.to/migu3l/commit-standard-and-semantic-versioning-for-any-project-1ihc
 
-- Fork the Repository 
-   - here we had forked https://github.com/anjandebnath/MockitoUnitTestTutorial and the forked link is https://github.com/W3-Anjan/MockitoUnitTestTutorial
+**Steps to Automatically Generate A Helpful Changelog From Your Git Commit Messages**
+
+- Install Node.js on your system according to your OS
    
-- Clone the Repository
-   - git clone https://github.com/W3-Anjan/MockitoUnitTestTutorial.git
-   
+- Install global dependencies
+  ```
+   - npm i -g commitizen
+   - npm i -D husky @commitlint/cli @commitlint/config-conventional @semantic-release/git @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/npm
+   ```
 - Create a New Branch
    - **$ git checkout -b contributor-branch**
    
