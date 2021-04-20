@@ -102,19 +102,23 @@ https://dev.to/migu3l/commit-standard-and-semantic-versioning-for-any-project-1i
            }, 
 
     ``` 
-- The first release can be created by running ``npm run release -- --first-release`` in the terminal:  
+- The first release can be created by running ``npm run release -- --first-release`` in the terminal: 
+
+- What standard-version doesn’t do is pushing the commit to your remote repository, 
+  so after running ``npm run release`` you need to perform
+  ``git push --follow-tags origin master`` and publish the package. 
 
 ## Semantic Versioning
 
 - ``fix``: a commit of this type ``patches`` a bug in your codebase and correlates with the 
   ``patch version`` in semantic versioning. ``1.0.0 -> 1.0.1``
 - ``feat``: a commit of this type introduces a new ``feature`` to the codebase and correlates with a
-  ``minor version`` in semantic versioning. ``1.0.1 -> 1.1.1``
+  ``minor version`` in semantic versioning. ``1.0.0 -> 1.1.0``
 - ``BREAKING CHANGE``: a commit that has the text ``BREAKING CHANGE:`` at the beginning of its 
   ``optional body or footer section`` introduces a breaking API change and correlates with a 
   ``major version`` in semantic versioning. A ``breaking change`` can be part of commits of any type. 
    e.g., a fix:, feat: & chore: types would all be valid, in addition to any other type.
-   ``1.1.1 -> 2.0.0``
+   ``1.0.0 -> 2.0.0``
 - Other types like ``chore:``, ``docs:``, ``style:``, ``refactor:``, ``perf:``, ``test:`` are recommended 
   by the Angular convention. These types have no implicit effect on semantic versioning and are not part of 
   the conventional commit specification.
