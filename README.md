@@ -119,6 +119,29 @@ https://dev.to/migu3l/commit-standard-and-semantic-versioning-for-any-project-1i
   by the Angular convention. These types have no implicit effect on semantic versioning and are not part of 
   the conventional commit specification.
   
+  Example:
+  
+  Definition | Description
+  -----------|------------
+  feat | A new feature
+  fix | A bug fix
+  docs | Documentation only changes
+  style | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+  refactor | A code change that neither fixes a bug nor adds a feature
+  perf | A code change that improves performance
+  test | Adding missing or correcting existing tests
+  chore | Changes to the build process or auxiliary tools and libraries such as documentation generation
+  
+  Take special note on a [revert commit](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#revert)
+  
+  Here is how semantic-release will map these to release types and how it maps to [semantic verioning](https://semver.org/#summary):
+  
+  Commit message | Release type
+  ----------------|--------------
+  `fix(pencil): stop graphite breaking `<br>`when too much pressure applied` | Patch Release (PATCH)
+  `feat(pencil): add 'graphiteWidth' option` | Feature Release (MINOR)
+  `perf(pencil): remove 'graphiteWidth' option`<br> `BREAKING CHANGE: The graphiteWidth option `<br>`has been removed. The default graphite`<br>` width of 10mm is always used for performance reasons.` | Breaking Release (MAJOR)
+  
   
     
     
